@@ -54,6 +54,7 @@ function Makie.plot!(plot::Band)
     end
     attr = Attributes(plot)
     attr[:color] = meshcolor
+    attr[:alpha] = plot.alpha
     mesh!(plot, attr, coordinates, connectivity)
 end
 
